@@ -1,0 +1,41 @@
+:root {
+  font-size: 14px;
+  @media screen and (min-width: 800px) {
+    font-size: 16px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #658a9e;
+  font-family: "Mali", "Inter", "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+input,
+button {
+  background-color: initial;
+  font-family: inherit;
+  border: initial;
+  outline: initial;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}

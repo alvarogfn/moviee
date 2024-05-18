@@ -1,0 +1,47 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 700px;
+
+  padding: 5px;
+}
+
+.label {
+  flex-grow: 1;
+  height: 40px;
+
+  padding-left: 40px;
+
+  background-image: url("../../assets/search.svg");
+  background-repeat: no-repeat;
+  background-position: 1.25% center;
+  background-size: 25px 25px;
+
+  cursor: pointer;
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+
+  font-size: 1.15rem;
+
+  padding: 10px;
+
+  color: #2d2d2d;
+
+  transition: 200ms;
+
+  font-weight: 500;
+
+  &::placeholder {
+    font-weight: 200;
+  }
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}

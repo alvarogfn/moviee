@@ -1,0 +1,26 @@
+.card {
+  display: grid;
+  gap: 5px;
+}
+
+.img {
+  object-fit: cover;
+
+  height: 300px;
+  width: 100%;
+
+  margin: 0 auto;
+
+  box-shadow: 0 0 5px #0000004d;
+}
+
+.title {
+  font-weight: 900;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+.year {
+  font-weight: 300;
+  color: #f1f1f1;
+}

@@ -1,0 +1,70 @@
+@keyframes grow {
+  0% {
+    height: 20%;
+    bottom: 0;
+    top: initial;
+  }
+  50% {
+    height: 100%;
+    bottom: 0;
+    top: initial;
+  }
+  75% {
+    height: 100%;
+    top: 0;
+    bottom: initial;
+  }
+  100% {
+    top: 0;
+    height: 20%;
+    bottom: initial;
+  }
+}
+
+.container {
+  position: relative;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: center;
+
+  column-gap: 5px;
+
+  width: max-content;
+  height: 60px;
+
+  .square {
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #d9896c;
+
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+
+    bottom: 0;
+
+    &:nth-child(1) {
+      left: 20px;
+      animation-delay: 0ms;
+    }
+
+    &:nth-child(2) {
+      left: 60px;
+
+      animation-delay: 200ms;
+    }
+
+    &:nth-child(3) {
+      left: 100px;
+
+      animation-delay: 400ms;
+    }
+  }
+}

@@ -1,0 +1,233 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 30px;
+
+  gap: 5px;
+
+  color: #f1f1f1;
+
+  padding: 10px;
+  color: #2d2d2d;
+}
+
+.title {
+  grid-column: 1 / 6;
+  grid-row: 1 / 3;
+
+  align-self: end;
+
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+
+  color: #f1f1f1;
+}
+
+.poster {
+  grid-column: 1 / 6;
+  grid-row: 13 / 25;
+
+  align-self: center;
+  justify-self: center;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  box-shadow: 0 0 5px #0000001e;
+
+  border-radius: 2.5px;
+}
+
+.yearGenre {
+  grid-column: 1 / 6;
+  grid-row: 11 / 13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+
+  background-color: #d9896c;
+
+  border-radius: 2.5px;
+
+  padding: 5px;
+
+  .year {
+    font-family: "Rubik", sans-serif;
+  }
+}
+
+.imdbRate,
+.released,
+.rated {
+  grid-row: 3 / 4;
+
+  height: 100%;
+
+  background-color: #e6be92;
+  border-radius: 5px;
+
+  text-align: center;
+  vertical-align: middle;
+  align-self: center;
+
+  padding: 5px;
+}
+
+.plot {
+  grid-column: 1 / 6;
+  grid-row: 4 / 8;
+  color: #f1f1f1dc;
+
+  text-align: justify;
+}
+
+.rated {
+  grid-column: 1 / 3;
+}
+
+.released {
+  grid-column: 3 / 5;
+}
+
+.imdbRate {
+  grid-column: 5 / 6;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  &Total {
+    vertical-align: text-top;
+    content: "/10";
+    font-weight: 300;
+    font-size: 0.7em;
+    margin-left: 5px;
+  }
+}
+
+.writer {
+  text-align: center;
+  grid-column: 1 / 6;
+  grid-row: 10 / 11;
+
+  background-color: #d9d1c0;
+
+  padding: 5px;
+
+  border-radius: 2px;
+}
+
+.language,
+.runtime {
+  color: #f1f1f1;
+
+  width: 100%;
+
+  align-self: center;
+  justify-self: center;
+
+  padding: 5px;
+
+  text-transform: capitalize;
+
+  span {
+    font-weight: 900;
+  }
+}
+
+.language {
+  grid-row: 8 / 9;
+  grid-column: 1 / 6;
+}
+
+.runtime {
+  grid-row: 9 / 10;
+  grid-column: 1 / 6;
+}
+
+.awards {
+  background-color: #b1c6bf;
+  grid-row: 25 / 26;
+  grid-column: 1 / 6;
+
+  border-radius: 2px;
+  padding: 5px;
+
+  text-align: center;
+}
+
+@media screen and (min-width: 780px) {
+  .container {
+    padding: 20px;
+    grid-template-columns:
+      minmax(120px, 2fr) minmax(120px, 2fr) minmax(120px, 2fr)
+      40px minmax(200px, 4fr);
+    grid-template-rows: repeat(8, 35px);
+
+    gap: 20px;
+  }
+
+  .poster {
+    grid-column: 5 / 6;
+    grid-row: 1 / 8;
+
+    object-fit: cover;
+    width: 300px;
+    height: 100%;
+  }
+
+  .title {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .yearGenre {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .imdbRate,
+  .released,
+  .rated {
+    grid-row: 3 / 4;
+  }
+
+  .rated {
+    grid-column: 1 / 2;
+  }
+
+  .released {
+    grid-column: 2 / 3;
+  }
+
+  .imdbRate {
+    grid-column: 3 / 4;
+  }
+
+  .plot {
+    grid-column: 1 / 4;
+    grid-row: 4 / 6;
+  }
+
+  .language {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+  }
+
+  .runtime {
+    grid-column: 1 / 4;
+    grid-row: 7 / 8;
+  }
+
+  .writer {
+    grid-column: 1 / 4;
+    grid-row: 8 / 9;
+  }
+
+  .awards {
+    grid-column: 5 / 6;
+    grid-row: 8 / 9;
+  }
+}

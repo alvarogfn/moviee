@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.title {
+  font-family: "Rubik", sans-serif;
+  color: #f1f1f1;
+  text-shadow: 0 0 5px #2d2d2d;
+}
+
+.paragraph {
+  color: #f1f1f1;
+  font-weight: 300;
+}

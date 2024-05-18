@@ -1,0 +1,44 @@
+.container {
+  margin: inherit;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.item {
+  width: 240px;
+  min-width: 240px;
+  flex-basis: 240px;
+}
+
+.list {
+  display: flex;
+  flex-flow: row nowrap;
+
+  padding-inline: 20px;
+
+  max-width: 100vw;
+  height: inherit;
+
+  column-gap: 50px;
+
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+
+  overflow-y: auto;
+  box-sizing: content-box;
+}
+
+.loading {
+  margin-left: 50px;
+}
+
+.title {
+  color: #f1f1f1;
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
